@@ -1,6 +1,6 @@
 # IMPORT MODULES
 import time
-import sys
+import sys          #show the errors in red colour
 import mysql.connector as sql
 mycon = sql.connect(host="localhost",user="sachinrk",password="Rk@9728211958",database="fbi")
 
@@ -275,9 +275,9 @@ def depositMoney():
         insertHistory = "INSERT INTO {} (ACCOUNT_NUMBER,AMOUNT_DEPOSIT) VALUES({},{});".format(userId.replace("@","AT"), inputAccNo, money)
         cursor.execute(insertHistory)
         mycon.commit()
-        print("\nTRANSFERrING AMOUNT",end="")
+        print("\nTRANSFERRING AMOUNT",end="")
         animatedDots()
-        print("\nDEPOSIT  SUCCESFULLY DONE")
+        print("\nSUCCESFULLY DONE")
         return 
 
     else:
