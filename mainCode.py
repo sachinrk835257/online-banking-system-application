@@ -2,7 +2,7 @@
 import time
 import sys          #show the errors in red colour
 import mysql.connector as sql
-mycon = sql.connect(host="localhost",user="sachinrk",password="Rk@9728211958",database="fbi")
+mycon = sql.connect(host="localhost",user="username",password="yourPassword",database="databaseName")
 
 if mycon.is_connected == False:
     print("\nSORRY DATABASES ERROR FOUND!!!!!\n\n")
